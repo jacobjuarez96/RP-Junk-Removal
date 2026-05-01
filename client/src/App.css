@@ -454,13 +454,12 @@ h1 {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-
+  border-radius: 36px;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto 90px;
   text-align: center;
   padding: 90px 24px;
-  border-radius: 36px;
-  /* box-shadow: 0 24px 70px rgba(16, 20, 16, 0.08); */
+  
 }
 
 .cta::before {
@@ -470,7 +469,7 @@ h1 {
   background-image: url("/src/assets/forest.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
+  background-size: cover;
   opacity: .15;
   pointer-events: none;
   z-index: 0;
@@ -548,6 +547,11 @@ footer p {
     gap: 16px;
     text-align: center;
   }
+
+  .cta::before {
+    /* display: none; */
+    background-size: 400%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -573,4 +577,6 @@ footer p {
   }
 
   .navCall span {display: none;}
+
+  
 }
