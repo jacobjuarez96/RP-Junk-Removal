@@ -25,6 +25,9 @@
   border-radius: 999px;
   font-weight: 800;
   transition: 0.2s ease;
+  max-width: 48vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navCall:hover {
@@ -561,4 +564,13 @@ footer p {
     width: 100%;
     text-align: center;
   }
+}
+
+@media (max-width: 600px) {
+  .navCall {
+    padding: 10px 14px;
+    font-size: .9rem;
+  }
+
+  .navCall span {display: none;}
 }
